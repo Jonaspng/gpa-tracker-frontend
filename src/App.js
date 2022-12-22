@@ -16,14 +16,14 @@ function App(){
 
 
   useEffect(() => {
-    fetch("https://gpa-tracker2021-api.herokuapp.com/api/profile",{ withCredentials: true, credentials: 'include'})
+    fetch("https://gpa-tracker-backend.up.railway.app/api/profile",{ withCredentials: true, credentials: 'include'})
       .then((res) => res.json())
       .then((semester) => setSemester(semester.userSemester));
   }, []);
 
 
   useEffect(() => {
-    fetch("https://gpa-tracker2021-api.herokuapp.com/api/auth",{ withCredentials: true,credentials: 'include'})
+    fetch("https://gpa-tracker-backend.up.railway.app/api/auth",{ withCredentials: true,credentials: 'include'})
       .then((res) => res.json())
       .then((auth) => setAuthenticated(auth.message));
   }, []);
