@@ -19,7 +19,7 @@ function Login(){
             />
             
             <Auth
-                route="https://gpa-tracker2021-api.herokuapp.com/login"
+                route="https://gpa-tracker-backend.up.railway.app/login"
                 title="Login"
                 btn="Login"
                 name="hidden"

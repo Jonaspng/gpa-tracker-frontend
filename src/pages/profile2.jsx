@@ -16,13 +16,13 @@ function Profile2(){
 
 
     useEffect(() => {
-        fetch("https://gpa-tracker2021-api.herokuapp.com/api/gpa", { withCredentials: true,credentials: 'include'})
+        fetch("https://gpa-tracker-backend.up.railway.app/api/gpa", { withCredentials: true,credentials: 'include'})
           .then((res) => res.json())
           .then((GPA) => setGPA(GPA.GPA));
       }, []);
 
     useEffect(() => {
-        fetch("https://gpa-tracker2021-api.herokuapp.com/api/profile", { withCredentials: true,credentials: 'include'})
+        fetch("https://gpa-tracker-backend.up.railway.app/api/profile", { withCredentials: true,credentials: 'include'})
           .then((res) => res.json())
           .then((semester) => setSemester(semester.userSemester));
       }, []);
@@ -85,11 +85,11 @@ function Profile2(){
                     {details.map(getRow)}
                 </tbody>
             </table>
-            <form onSubmit={handleReset} action="https://gpa-tracker2021-api.herokuapp.com/reset" method="POST">
+            <form onSubmit={handleReset} action="https://gpa-tracker-backend.up.railway.app/reset" method="POST">
                 <a onClick={handleClick} className="btn btn-success normal-btn">Add New Semester</a>
                 <button onClick={()=>{confirmation=window.confirm("Are you sure you want to reset all data?")}} type="submit" className="btn btn-danger normal-btn">Reset Profile</button>
             </form>
-            <form action="https://gpa-tracker2021-api.herokuapp.com/profile2" method="POST">
+            <form action="https://gpa-tracker-backend.up.railway.app/profile2" method="POST">
                 {add?<GpaForm gradeName={"semesterGrade"} creditName={"semesterCredit"} semester={parseInt(semester)+1}/>:null}
                 {add?<button type="submit" className="btn btn-primary">Submit</button>:null}   
             </form>           

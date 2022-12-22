@@ -15,7 +15,7 @@ function Auth(props){
                 <form action={props.route} method="POST">
                     <div className="card-body">
                         <h3 className="card-title">{props.greetings} {name}</h3>
-                        <a className="btn btn-light" href="https://gpa-tracker2021-api.herokuapp.com/auth/google"><img className="google-icon"src={google} alt="google-icon"/>{props.google}</a>
+                        <a className="btn btn-light" href="https://gpa-tracker-backend.up.railway.app/auth/google"><img className="google-icon"src={google} alt="google-icon"/>{props.google}</a>
                         <hr/>
                         <h5>Or</h5>
                         <hr/>

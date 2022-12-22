@@ -16,7 +16,7 @@ function Navbar2(props) {
               <li className="nav-item" >
                 <a className="nav-link active" href={props.link2} aria-current="page">{props.item2}</a>
               </li>
-              <form action="https://gpa-tracker2021-api.herokuapp.com/logout" method="POST">
+              <form action="https://gpa-tracker-backend.up.railway.app/logout" method="POST">
                 <button className="btn btn-outline-light" type="submit">Logout</button>
               </form>
             </ul>

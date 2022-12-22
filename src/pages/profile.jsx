@@ -50,7 +50,7 @@ function Profile(){
             />
             <div className="profile-content">
                 <h4>Please Fill up the form below</h4>
-                <form action="https://gpa-tracker2021-api.herokuapp.com/profile" method="POST">
+                <form action="https://gpa-tracker-backend.up.railway.app/profile" method="POST">
                     <p className="form-qn">How many semesters did you complete?</p>
                         <select name="semesters"onChange={getSemester} className="form-select mx-auto" aria-label="Default select example">
                             <option defaultValue="0" value="0">Please Click Here</option>

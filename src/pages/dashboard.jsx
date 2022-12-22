@@ -8,7 +8,7 @@ function Dashboard(){
   const [GPA,setGPA]=useState();
 
   useEffect(() => {
-    fetch("https://gpa-tracker2021-api.herokuapp.com/api/label",{ withCredentials: true,credentials: 'include'})
+    fetch("https://gpa-tracker-backend.up.railway.app/api/label",{ withCredentials: true,credentials: 'include'})
       .then((res) => res.json())
       .then((label) => {
         setLabel(label.Label);
@@ -16,7 +16,7 @@ function Dashboard(){
   }, []);
 
   useEffect(() => {
-    fetch("https://gpa-tracker2021-api.herokuapp.com/api/gpa",{ withCredentials: true,credentials: 'include'})
+    fetch("https://gpa-tracker-backend.up.railway.app/api/gpa",{ withCredentials: true,credentials: 'include'})
       .then((res) => res.json())
       .then((GPA) => {
         setGPA(GPA.GPA);

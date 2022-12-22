@@ -21,7 +21,7 @@ function Register(){
             />
         
             <Auth
-                route="https://gpa-tracker2021-api.herokuapp.com/register"
+                route="https://gpa-tracker-backend.up.railway.app/register"
                 title="Register"
                 btn="Register"
                 name="form-floating"
