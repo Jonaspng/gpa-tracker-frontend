@@ -1,0 +1,107 @@
+body{
+    background-color: #87a7b3;
+}
+
+footer{
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    text-align: center;
+    color: #687980;
+}
+
+.footer-para{
+    margin:5px;
+}
+
+.home-content{
+    text-align: center;
+    margin-top: 90px;
+}
+
+.card{
+    width: 350px;
+    height: 500px;
+    margin: 30px;
+}
+
+.card-body{
+    padding: 10px;
+}
+.card-title{
+    margin-bottom: 30px;
+}
+
+.profile-content{
+    margin: 20px;
+    text-align: center;
+}
+
+.form-floating{
+    width: 300px;
+    margin: 20px auto;
+}
+
+.form-select{
+    width: 300px;
+    margin: 30px;
+    display: inline-block;
+}
+
+.form-qn{
+    display: inline-block;
+    margin: 20px;
+}
+
+.login{
+    text-align: center;
+}
+
+.login-card{
+    margin:50px auto;
+}
+
+.gpa-grades{
+    margin: 10px 10px 0 10px;
+    display: inline-block;
+}
+
+.gpa-credits{
+    margin: 10px 5px 50px 10px;
+    display: inline-block;
+}
+
+.dashboard{
+    background-color: white;
+    height: 100%;
+}
+
+.line-chart{
+    padding: 4% 15%;
+    border-radius: 4px;;
+}
+
+.hidden{
+    visibility: hidden;
+    position: absolute;
+    height: 0px;
+    margin: 30px;
+}
+
+.GPA-table{
+    width:500px;   
+}
+
+.normal-btn{
+    margin:10px;
+}
+
+.profile2{
+    text-align: center;
+    margin-top: 30px; 
+}
+
+.google-icon{
+    height: 30px;
+    margin: 0 10px 0 0;
+}
